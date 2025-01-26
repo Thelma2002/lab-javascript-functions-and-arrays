@@ -13,7 +13,6 @@ function maxOfTwoNumbers(num1, num2) {
 
 // Iteration #2: Find longest word
 // Takes as an argument an array of words and returns the longest one.
-// If there are 2 with the same length, it should return the first occurrence.
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
 function findLongestWord(words) {
@@ -22,8 +21,8 @@ function findLongestWord(words) {
 
     // Create a for loop
     for (let i = 0; i < words.length; i++) {
-        if (words[i].length > longestWord.length) { // If words[i].length is greater than the length of the longest word
-            longestWord = words[i]; // Then longestWord takes the new value
+        if (words[i].length > longestWord.length) { 
+            longestWord = words[i]; 
         }
     }
     return longestWord;
